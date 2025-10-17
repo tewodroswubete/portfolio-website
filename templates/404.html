@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block title %}Page Not Found{% endblock %}
+
+{% block content %}
+<section class="error-page">
+    <div class="container">
+        <div class="error-content text-center">
+            <div class="error-code">404</div>
+            <h1>Oops! Page Not Found</h1>
+            <p>The page you're looking for might have been moved, removed, or doesn't exist.</p>
+            <div class="error-animation">
+                <div class="astronaut">
+                    <div class="head"></div>
+                    <div class="body"></div>
+                    <div class="arm"></div>
+                    <div class="leg"></div>
+                </div>
+                <div class="moon"></div>
+                <div class="stars"></div>
+            </div>
+            <a href="{{ url_for('index') }}" class="btn btn-primary">Go Back Home</a>
+            <a href="{{ url_for('contact') }}" class="btn btn-outline">Contact Support</a>
+        </div>
+    </div>
+</section>
+{% endblock %}

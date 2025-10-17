@@ -1,0 +1,133 @@
+{% extends "base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block content %}
+<section class="projects">
+    <div class="container">
+        <div class="section-title">
+            <h2>My Projects</h2>
+        </div>
+        <p class="text-center mb-4">Here are some of my recent projects. Each one is crafted with attention to detail and a focus on both functionality and aesthetics.</p>
+        
+        <div class="search-container mb-4">
+            <div class="search-box">
+                <input type="text" id="projectSearch" class="form-control" placeholder="Search projects by name, technology, or description...">
+                <button class="search-btn"><i>🔍</i></button>
+            </div>
+        </div>
+        
+        <div class="project-filters mb-4">
+            <button class="btn btn-outline active" data-filter="all">All</button>
+            <button class="btn btn-outline" data-filter="web">Web Apps</button>
+            <button class="btn btn-outline" data-filter="api">APIs</button>
+            <button class="btn btn-outline" data-filter="mobile">Mobile</button>
+        </div>
+        
+        <div class="project-grid">
+            <div class="project-card fade-in" data-category="web" data-modal-content='{"title": "E-Commerce Platform", "description": "A full-featured e-commerce solution with user authentication, payment processing, and inventory management. Built with Python Flask, PostgreSQL, and modern frontend technologies.", "tech": ["Python", "Flask", "PostgreSQL", "React", "Stripe API"], "features": ["User authentication", "Payment processing", "Inventory management", "Order tracking", "Admin dashboard"], "challenges": ["Scaling for high traffic", "Payment security", "Complex inventory logic"], "outcome": "Increased client revenue by 150% and improved user engagement by 75%."}'>
+                <div class="project-img">Web App</div>
+                <div class="project-content">
+                    <h3>E-Commerce Platform</h3>
+                    <p>A full-featured e-commerce solution with user authentication, payment processing, and inventory management. Built with Python Flask, PostgreSQL, and modern frontend technologies.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link view-details" data-project="ecommerce">View Details</a>
+                        <a href="#" class="project-link">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card fade-in delay-1" data-category="web" data-modal-content='{"title": "Task Management System", "description": "A comprehensive task management application with real-time updates, drag-and-drop interface, and team collaboration features. Includes user authentication and role-based access control.", "tech": ["Python", "Flask", "React", "Socket.io", "PostgreSQL"], "features": ["Real-time updates", "Drag-and-drop interface", "Team collaboration", "Role-based access"], "challenges": ["Real-time synchronization", "Performance optimization", "Complex UI"], "outcome": "Improved team productivity by 40% and reduced task completion time by 30%."}'>
+                <div class="project-img">Web App</div>
+                <div class="project-content">
+                    <h3>Task Management System</h3>
+                    <p>A comprehensive task management application with real-time updates, drag-and-drop interface, and team collaboration features. Includes user authentication and role-based access control.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link view-details" data-project="task">View Details</a>
+                        <a href="#" class="project-link">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card fade-in delay-2" data-category="api" data-modal-content='{"title": "Weather Data API", "description": "A RESTful API that aggregates and provides weather forecasts from multiple sources. Features rate limiting, caching, and comprehensive documentation. Built with Flask and deployed on cloud infrastructure.", "tech": ["Python", "Flask", "Redis", "Docker", "AWS"], "features": ["Multi-source aggregation", "Rate limiting", "Caching", "Comprehensive docs"], "challenges": ["Data accuracy", "API rate limits", "Caching strategy"], "outcome": "Serves 1M+ requests daily with 99.9% uptime and fast response times."}'>
+                <div class="project-img">API</div>
+                <div class="project-content">
+                    <h3>Weather Data API</h3>
+                    <p>A RESTful API that aggregates and provides weather forecasts from multiple sources. Features rate limiting, caching, and comprehensive documentation. Built with Flask and deployed on cloud infrastructure.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link view-details" data-project="weather">View Details</a>
+                        <a href="#" class="project-link">API Docs</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card fade-in" data-category="web" data-modal-content='{"title": "Portfolio Website", "description": "A responsive, modern portfolio website built with Flask and CSS. Features dark/light mode toggle, smooth animations, and optimized performance. This very website!", "tech": ["Python", "Flask", "HTML5", "CSS3", "JavaScript"], "features": ["Responsive design", "Dark/light mode", "Smooth animations", "Performance optimized"], "challenges": ["Cross-browser compatibility", "Performance optimization", "Modern animations"], "outcome": "Created a professional portfolio that showcases skills and attracts clients."}'>
+                <div class="project-img">Web App</div>
+                <div class="project-content">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive, modern portfolio website built with Flask and CSS. Features dark/light mode toggle, smooth animations, and optimized performance. This very website!</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link view-details" data-project="portfolio">View Details</a>
+                        <a href="#" class="project-link">Live Demo</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card fade-in delay-1" data-category="mobile" data-modal-content='{"title": "Expense Tracker Mobile", "description": "A mobile-first expense tracking application with receipt OCR scanning, category tagging, and spending analytics. Built with Flutter for cross-platform compatibility.", "tech": ["Flutter", "Dart", "Firebase", "OCR API"], "features": ["Receipt OCR scanning", "Category tagging", "Spending analytics", "Cross-platform"], "challenges": ["OCR accuracy", "Cross-platform UI", "Data visualization"], "outcome": "Downloaded by 10k+ users with 4.8/5 star rating on app stores."}'>
+                <div class="project-img">Mobile</div>
+                <div class="project-content">
+                    <h3>Expense Tracker Mobile</h3>
+                    <p>A mobile-first expense tracking application with receipt OCR scanning, category tagging, and spending analytics. Built with Flutter for cross-platform compatibility.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link view-details" data-project="expense">View Details</a>
+                        <a href="#" class="project-link">App Store</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-card fade-in delay-2" data-category="api" data-modal-content='{"title": "File Storage API", "description": "A secure file storage and sharing API with user accounts, file encryption, and sharing permissions. Features include version control, access analytics, and automated cleanup.", "tech": ["Python", "Flask", "AWS S3", "MongoDB", "Encryption"], "features": ["File encryption", "Version control", "Access analytics", "Secure sharing"], "challenges": ["Encryption implementation", "Scalable storage", "Security measures"], "outcome": "Handles petabytes of data with enterprise-grade security and reliability."}'>
+                <div class="project-img">API</div>
+                <div class="project-content">
+                    <h3>File Storage API</h3>
+                    <p>A secure file storage and sharing API with user accounts, file encryption, and sharing permissions. Features include version control, access analytics, and automated cleanup.</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link view-details" data-project="filestorage">View Details</a>
+                        <a href="#" class="project-link">API Docs</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Project Modal -->
+        <div class="modal" id="projectModal">
+            <div class="modal-content">
+                <span class="close" id="closeModal">&times;</span>
+                <div class="modal-body">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    
+                    <div class="modal-section">
+                        <h3>Technologies Used</h3>
+                        <div class="tech-tags" id="modalTech"></div>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3>Key Features</h3>
+                        <ul id="modalFeatures"></ul>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3>Challenges</h3>
+                        <ul id="modalChallenges"></ul>
+                    </div>
+                    
+                    <div class="modal-section">
+                        <h3>Outcome</h3>
+                        <p id="modalOutcome"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

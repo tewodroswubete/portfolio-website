@@ -1,0 +1,138 @@
+%PDF-1.4
+%
+1 0 obj
+<<
+/Kids [2 0 R]
+/Count 1
+/Type/Pages
+/MediaBox [0 0 614 792]
+>>
+endobj
+2 0 obj
+<<
+/Contents 3 0 R
+/Parent 1 0 R
+/Type/Page
+/Resources<<
+/ProcSet [/PDF /Text /ImageB /ImageC /ImageI]
+/Font<<
+/F1 5 0 R
+/F2 6 0 R
+>>
+>>
+>>
+endobj
+3 0 obj
+<<
+/Length 100
+>>
+stream
+BT
+/F1 24 Tf
+100 700 Td
+(Teddy Dev - Resume) Tj
+ET
+BT
+/F2 12 Tf
+100 650 Td
+(This is a placeholder resume file.) Tj
+ET
+BT
+/F2 12 Tf
+100 630 Td
+(Name: Teddy Dev) Tj
+ET
+BT
+/F2 12 Tf
+100 610 Td
+(Email: hello@teddydev.com) Tj
+ET
+BT
+/F2 12 Tf
+100 590 Td
+(Phone: +1 (555) 123-4567) Tj
+ET
+BT
+/F2 14 Tf
+100 550 Td
+(Professional Experience) Tj
+ET
+BT
+/F2 12 Tf
+100 530 Td
+(• Full-Stack Developer at TechCorp - 2020-Present) Tj
+ET
+BT
+/F2 12 Tf
+100 510 Td
+(• Web Developer at StartupX - 2018-2020) Tj
+ET
+BT
+/F2 14 Tf
+100 470 Td
+(Education) Tj
+ET
+BT
+/F2 12 Tf
+100 450 Td
+(B.S. Computer Science, University of Tech - 2018) Tj
+ET
+BT
+/F2 14 Tf
+100 410 Td
+(Skills) Tj
+ET
+BT
+/F2 12 Tf
+100 390 Td
+(• Python, JavaScript, HTML, CSS) Tj
+ET
+BT
+/F2 12 Tf
+100 370 Td
+(• Flask, Django, React) Tj
+ET
+BT
+/F2 12 Tf
+100 350 Td
+(• SQL, MongoDB) Tj
+ET
+endstream
+endobj
+4 0 obj
+<<
+/Type/Catalog
+/Pages 1 0 R
+>>
+endobj
+5 0 obj
+<<
+/Type/Font
+/Subtype/Type1
+/BaseFont/Helvetica-Bold
+>>
+endobj
+6 0 obj
+<<
+/Type/Font
+/Subtype/Type1
+/BaseFont/Helvetica
+>>
+endobj
+xref
+0 7
+0000000000 65535 f 
+0000000015 00000 n 
+0000000073 00000 n 
+0000000344 00000 n 
+0000000789 00000 n 
+0000000823 00000 n 
+0000000876 00000 n 
+trailer
+<<
+/Size 7
+/Root 4 0 R
+>>
+startxref
+929
+%%EOF
